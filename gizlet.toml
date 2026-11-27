@@ -1,0 +1,80 @@
+id = "io.gizlet.modelsviewer"
+version = "0.1.0"
+name = "Models Viewer"
+category = "app"
+description = "A pocket gallery of 61 open 3D models from Khronos, Poly Haven, KayKit, Google and NVIDIA. Turn, zoom and animate each one on a lit stage, and see who made it."
+tags = ["3d", "gallery", "models", "viewer", "art", "open-source"]
+color = "#3346e0"
+license = "MIT"
+runtime = 1
+icon = "store/icon.png"
+cover = "store/cover.jpg"
+screenshots = [
+    "store/screenshots/gallery.png",
+    "store/screenshots/helmet.png",
+    "store/screenshots/knight-info.png",
+    "store/screenshots/engine.png",
+    "store/screenshots/fox.png",
+    "store/screenshots/food.png",
+    "store/screenshots/mage-wireframe.png",
+]
+
+[names]
+zh-CN = "模型展馆"
+
+[descriptions]
+zh-CN = "装进掌机的开源 3D 模型展馆：收录 Khronos、Poly Haven、KayKit、Google 和 NVIDIA 的 61 个模型，可以旋转、缩放、播放动画，并查看每个模型的作者和授权。"
+
+[about]
+en = "store/about.en.md"
+zh-CN = "store/about.zh-CN.md"
+
+[[controls]]
+button = "dpad"
+action = "Choose a model; turn and tilt it"
+actions = { zh-CN = "选择模型；旋转和俯仰" }
+
+[[controls]]
+button = "a"
+action = "View the model; auto-rotate on or off"
+actions = { zh-CN = "查看模型；开关自动旋转" }
+
+[[controls]]
+button = "b"
+action = "Back; press twice in the gallery to quit"
+actions = { zh-CN = "返回；在展馆中连按两次退出" }
+
+[[controls]]
+button = "x"
+action = "Authors, license and figures"
+actions = { zh-CN = "作者、授权和模型数据" }
+
+[[controls]]
+button = "y"
+action = "Style: studio, clay, wireframe, normals"
+actions = { zh-CN = "风格：摄影棚、白模、线框、法线" }
+
+[[controls]]
+button = "l"
+action = "Previous category or model"
+actions = { zh-CN = "上一个分类或模型" }
+
+[[controls]]
+button = "r"
+action = "Next category or model"
+actions = { zh-CN = "下一个分类或模型" }
+
+[[controls]]
+button = "select"
+action = "Next animation"
+actions = { zh-CN = "下一个动画" }
+
+[[controls]]
+button = "start"
+action = "About; reset the view"
+actions = { zh-CN = "关于；复位视角" }
+
+[[packages]]
+target = "aarch64-unknown-linux-gnu"
+tier = "lite"
+entry = "bin/modelsviewer"

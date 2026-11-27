@@ -1,0 +1,2213 @@
+{
+  "schema": 1,
+  "categories": [
+    {
+      "id": "characters",
+      "title": {
+        "en": "Characters",
+        "zh-CN": "角色"
+      }
+    },
+    {
+      "id": "animals",
+      "title": {
+        "en": "Animals",
+        "zh-CN": "动物"
+      }
+    },
+    {
+      "id": "toys",
+      "title": {
+        "en": "Toys",
+        "zh-CN": "玩具"
+      }
+    },
+    {
+      "id": "home",
+      "title": {
+        "en": "Home",
+        "zh-CN": "家居"
+      }
+    },
+    {
+      "id": "gadgets",
+      "title": {
+        "en": "Gadgets",
+        "zh-CN": "器物"
+      }
+    },
+    {
+      "id": "food",
+      "title": {
+        "en": "Food",
+        "zh-CN": "美食"
+      }
+    },
+    {
+      "id": "art",
+      "title": {
+        "en": "Art",
+        "zh-CN": "艺术"
+      }
+    }
+  ],
+  "models": [
+    {
+      "id": "kaykit-knight",
+      "title": {
+        "en": "Knight",
+        "zh-CN": "骑士"
+      },
+      "category": "characters",
+      "collection": "KayKit Adventurers 1.0",
+      "authors": [
+        "Kay Lousberg (kaylousberg.com)"
+      ],
+      "licenses": [
+        "CC0-1.0"
+      ],
+      "source": "https://github.com/KayKit-Game-Assets/KayKit-Character-Pack-Adventures-1.0/tree/672074b73ba276876a19e8816ecdc5241817ab47",
+      "changes": {
+        "en": "Removed 5 props; kept 9 of 76 animations; textures reduced from 1024 px to at most 512 px.",
+        "zh-CN": "移除 5 件道具；保留 76 个动画中的 9 个；贴图从 1024 像素缩小到不超过 512 像素。"
+      },
+      "stats": {
+        "triangles": 5296,
+        "vertices": 4957,
+        "materials": 1,
+        "textures": 1,
+        "joints": 41,
+        "animations": [
+          "1H_Melee_Attack_Chop",
+          "Block",
+          "Cheer",
+          "Death_A",
+          "Dodge_Forward",
+          "Idle",
+          "Jump_Full_Short",
+          "Running_A",
+          "Walking_A"
+        ],
+        "bytes": 590988,
+        "size": [
+          2.459,
+          2.467,
+          1.985
+        ]
+      }
+    },
+    {
+      "id": "kaykit-mage",
+      "title": {
+        "en": "Mage",
+        "zh-CN": "法师"
+      },
+      "category": "characters",
+      "collection": "KayKit Adventurers 1.0",
+      "authors": [
+        "Kay Lousberg (kaylousberg.com)"
+      ],
+      "licenses": [
+        "CC0-1.0"
+      ],
+      "source": "https://github.com/KayKit-Game-Assets/KayKit-Character-Pack-Adventures-1.0/tree/672074b73ba276876a19e8816ecdc5241817ab47",
+      "changes": {
+        "en": "Removed 3 props; kept 9 of 76 animations; textures reduced from 1024 px to at most 512 px.",
+        "zh-CN": "移除 3 件道具；保留 76 个动画中的 9 个；贴图从 1024 像素缩小到不超过 512 像素。"
+      },
+      "stats": {
+        "triangles": 4949,
+        "vertices": 4304,
+        "materials": 1,
+        "textures": 1,
+        "joints": 41,
+        "animations": [
+          "Cheer",
+          "Death_A",
+          "Dodge_Forward",
+          "Idle",
+          "Jump_Full_Short",
+          "Running_A",
+          "Spellcast_Shoot",
+          "Spellcasting",
+          "Walking_A"
+        ],
+        "bytes": 549332,
+        "size": [
+          2.175,
+          2.716,
+          2.271
+        ]
+      }
+    },
+    {
+      "id": "kaykit-barbarian",
+      "title": {
+        "en": "Barbarian",
+        "zh-CN": "野蛮人"
+      },
+      "category": "characters",
+      "collection": "KayKit Adventurers 1.0",
+      "authors": [
+        "Kay Lousberg (kaylousberg.com)"
+      ],
+      "licenses": [
+        "CC0-1.0"
+      ],
+      "source": "https://github.com/KayKit-Game-Assets/KayKit-Character-Pack-Adventures-1.0/tree/672074b73ba276876a19e8816ecdc5241817ab47",
+      "changes": {
+        "en": "Removed 4 props; kept 10 of 76 animations; textures reduced from 1024 px to at most 512 px.",
+        "zh-CN": "移除 4 件道具；保留 76 个动画中的 10 个；贴图从 1024 像素缩小到不超过 512 像素。"
+      },
+      "stats": {
+        "triangles": 5285,
+        "vertices": 4515,
+        "materials": 1,
+        "textures": 1,
+        "joints": 41,
+        "animations": [
+          "2H_Melee_Attack_Chop",
+          "2H_Melee_Attack_Spin",
+          "2H_Melee_Idle",
+          "Cheer",
+          "Death_A",
+          "Dodge_Forward",
+          "Idle",
+          "Jump_Full_Short",
+          "Running_A",
+          "Walking_A"
+        ],
+        "bytes": 607016,
+        "size": [
+          2.474,
+          2.398,
+          1.85
+        ]
+      }
+    },
+    {
+      "id": "kaykit-rogue-hooded",
+      "title": {
+        "en": "Hooded Rogue",
+        "zh-CN": "兜帽游侠"
+      },
+      "category": "characters",
+      "collection": "KayKit Adventurers 1.0",
+      "authors": [
+        "Kay Lousberg (kaylousberg.com)"
+      ],
+      "licenses": [
+        "CC0-1.0"
+      ],
+      "source": "https://github.com/KayKit-Game-Assets/KayKit-Character-Pack-Adventures-1.0/tree/672074b73ba276876a19e8816ecdc5241817ab47",
+      "changes": {
+        "en": "Removed 3 props; kept 9 of 76 animations; textures reduced from 1024 px to at most 512 px.",
+        "zh-CN": "移除 3 件道具；保留 76 个动画中的 9 个；贴图从 1024 像素缩小到不超过 512 像素。"
+      },
+      "stats": {
+        "triangles": 4349,
+        "vertices": 3666,
+        "materials": 1,
+        "textures": 1,
+        "joints": 41,
+        "animations": [
+          "Cheer",
+          "Death_A",
+          "Dodge_Forward",
+          "Dualwield_Melee_Attack_Slice",
+          "Dualwield_Melee_Attack_Stab",
+          "Idle",
+          "Jump_Full_Short",
+          "Running_A",
+          "Walking_A"
+        ],
+        "bytes": 524000,
+        "size": [
+          2.007,
+          2.251,
+          1.548
+        ]
+      }
+    },
+    {
+      "id": "kaykit-skeleton-warrior",
+      "title": {
+        "en": "Skeleton Warrior",
+        "zh-CN": "骷髅战士"
+      },
+      "category": "characters",
+      "collection": "KayKit Skeletons 1.0",
+      "authors": [
+        "Kay Lousberg (kaylousberg.com)"
+      ],
+      "licenses": [
+        "CC0-1.0"
+      ],
+      "source": "https://github.com/KayKit-Game-Assets/KayKit-Character-Pack-Skeletons-1.0/tree/15b62b9bad122f72926c10fb14d622c73819fa54",
+      "changes": {
+        "en": "Kept 8 of 95 animations; textures reduced from 1024 px to at most 512 px.",
+        "zh-CN": "保留 95 个动画中的 8 个；贴图从 1024 像素缩小到不超过 512 像素。"
+      },
+      "stats": {
+        "triangles": 5934,
+        "vertices": 6117,
+        "materials": 2,
+        "textures": 1,
+        "joints": 41,
+        "animations": [
+          "Death_C_Skeletons",
+          "Death_C_Skeletons_Resurrect",
+          "Hit_A",
+          "Idle",
+          "Running_A",
+          "Skeletons_Awaken_Standing",
+          "Taunt",
+          "Walking_D_Skeletons"
+        ],
+        "bytes": 653456,
+        "size": [
+          1.943,
+          2.59,
+          1.459
+        ]
+      }
+    },
+    {
+      "id": "kaykit-skeleton-mage",
+      "title": {
+        "en": "Skeleton Mage",
+        "zh-CN": "骷髅法师"
+      },
+      "category": "characters",
+      "collection": "KayKit Skeletons 1.0",
+      "authors": [
+        "Kay Lousberg (kaylousberg.com)"
+      ],
+      "licenses": [
+        "CC0-1.0"
+      ],
+      "source": "https://github.com/KayKit-Game-Assets/KayKit-Character-Pack-Skeletons-1.0/tree/15b62b9bad122f72926c10fb14d622c73819fa54",
+      "changes": {
+        "en": "Kept 7 of 95 animations; textures reduced from 1024 px to at most 512 px.",
+        "zh-CN": "保留 95 个动画中的 7 个；贴图从 1024 像素缩小到不超过 512 像素。"
+      },
+      "stats": {
+        "triangles": 4588,
+        "vertices": 4056,
+        "materials": 2,
+        "textures": 1,
+        "joints": 41,
+        "animations": [
+          "Cheer",
+          "Death_C_Skeletons",
+          "Idle",
+          "Skeletons_Awaken_Floor",
+          "Spellcast_Summon",
+          "Spellcasting",
+          "Walking_D_Skeletons"
+        ],
+        "bytes": 535432,
+        "size": [
+          1.938,
+          2.63,
+          1.735
+        ]
+      }
+    },
+    {
+      "id": "khronos-fox",
+      "title": {
+        "en": "Fox",
+        "zh-CN": "狐狸"
+      },
+      "category": "animals",
+      "collection": "Khronos glTF Sample Assets",
+      "authors": [
+        "PixelMannen (model, CC0-1.0)",
+        "tomkranis (rigging & animation, CC-BY-4.0)",
+        "@AsoboStudio and @scurest (conversion to gltf, CC-BY-4.0)"
+      ],
+      "licenses": [
+        "CC0-1.0",
+        "CC-BY-4.0"
+      ],
+      "source": "https://github.com/KhronosGroup/glTF-Sample-Assets/tree/e124e8d8d7330a5372bc2b4d00d39a4a9d7997ea/Models/Fox",
+      "changes": {
+        "en": "Textures reduced from 1024 px to at most 512 px.",
+        "zh-CN": "贴图从 1024 像素缩小到不超过 512 像素。"
+      },
+      "stats": {
+        "triangles": 576,
+        "vertices": 434,
+        "materials": 1,
+        "textures": 1,
+        "joints": 24,
+        "animations": [
+          "Survey",
+          "Walk",
+          "Run"
+        ],
+        "bytes": 92968,
+        "size": [
+          25.185,
+          79.029,
+          154.72
+        ]
+      }
+    },
+    {
+      "id": "khronos-barramundi-fish",
+      "title": {
+        "en": "Barramundi",
+        "zh-CN": "尖吻鲈"
+      },
+      "category": "animals",
+      "collection": "Khronos glTF Sample Assets",
+      "authors": [
+        "Microsoft (everything, CC0-1.0)"
+      ],
+      "licenses": [
+        "CC0-1.0"
+      ],
+      "source": "https://github.com/KhronosGroup/glTF-Sample-Assets/tree/e124e8d8d7330a5372bc2b4d00d39a4a9d7997ea/Models/BarramundiFish",
+      "changes": {
+        "en": "Textures reduced from 2048 px to at most 512 px.",
+        "zh-CN": "贴图从 2048 像素缩小到不超过 512 像素。"
+      },
+      "stats": {
+        "triangles": 3864,
+        "vertices": 2188,
+        "materials": 1,
+        "textures": 3,
+        "joints": 0,
+        "animations": [],
+        "bytes": 160936,
+        "size": [
+          0.143,
+          0.288,
+          0.643
+        ]
+      }
+    },
+    {
+      "id": "polyhaven-street-rat",
+      "title": {
+        "en": "Street Rat",
+        "zh-CN": "街头老鼠"
+      },
+      "category": "animals",
+      "collection": "Poly Haven",
+      "authors": [
+        "Sean Buckley"
+      ],
+      "licenses": [
+        "CC0-1.0"
+      ],
+      "source": "https://polyhaven.com/a/street_rat",
+      "changes": {
+        "en": "Packed into one GLB; simplified from 57,216 to 16,000 triangles; textures reduced from 1024 px to at most 512 px.",
+        "zh-CN": "打包为单个 GLB；三角面从 57,216 简化到 16,000；贴图从 1024 像素缩小到不超过 512 像素。"
+      },
+      "stats": {
+        "triangles": 16000,
+        "vertices": 9589,
+        "materials": 1,
+        "textures": 3,
+        "joints": 0,
+        "animations": [],
+        "bytes": 486928,
+        "size": [
+          0.032,
+          0.034,
+          0.148
+        ]
+      }
+    },
+    {
+      "id": "google-tyrannosaurus",
+      "title": {
+        "en": "Tyrannosaurus",
+        "zh-CN": "霸王龙"
+      },
+      "category": "animals",
+      "collection": "Google Scanned Objects",
+      "authors": [
+        "Google Research (© 2020 Google LLC)"
+      ],
+      "licenses": [
+        "CC-BY-4.0"
+      ],
+      "source": "https://app.gazebosim.org/GoogleResearch/fuel/models/Dino_3",
+      "changes": {
+        "en": "Converted from OBJ; textures reduced from 4096 px to at most 512 px.",
+        "zh-CN": "从 OBJ 转换；贴图从 4096 像素缩小到不超过 512 像素。"
+      },
+      "stats": {
+        "triangles": 17722,
+        "vertices": 9729,
+        "materials": 1,
+        "textures": 1,
+        "joints": 0,
+        "animations": [],
+        "bytes": 460516,
+        "size": [
+          0.289,
+          0.127,
+          0.069
+        ]
+      }
+    },
+    {
+      "id": "google-styracosaurus",
+      "title": {
+        "en": "Styracosaurus",
+        "zh-CN": "戟龙"
+      },
+      "category": "animals",
+      "collection": "Google Scanned Objects",
+      "authors": [
+        "Google Research (© 2020 Google LLC)"
+      ],
+      "licenses": [
+        "CC-BY-4.0"
+      ],
+      "source": "https://app.gazebosim.org/GoogleResearch/fuel/models/Dino_4",
+      "changes": {
+        "en": "Converted from OBJ; simplified from 21,900 to 16,000 triangles; textures reduced from 4096 px to at most 512 px.",
+        "zh-CN": "从 OBJ 转换；三角面从 21,900 简化到 16,000；贴图从 4096 像素缩小到不超过 512 像素。"
+      },
+      "stats": {
+        "triangles": 16000,
+        "vertices": 9338,
+        "materials": 1,
+        "textures": 1,
+        "joints": 0,
+        "animations": [],
+        "bytes": 437828,
+        "size": [
+          0.137,
+          0.093,
+          0.059
+        ]
+      }
+    },
+    {
+      "id": "google-triceratops",
+      "title": {
+        "en": "Triceratops",
+        "zh-CN": "三角龙"
+      },
+      "category": "animals",
+      "collection": "Google Scanned Objects",
+      "authors": [
+        "Google Research (© 2020 Google LLC)"
+      ],
+      "licenses": [
+        "CC-BY-4.0"
+      ],
+      "source": "https://app.gazebosim.org/GoogleResearch/fuel/models/Dino_5",
+      "changes": {
+        "en": "Converted from OBJ; textures reduced from 4096 px to at most 512 px.",
+        "zh-CN": "从 OBJ 转换；贴图从 4096 像素缩小到不超过 512 像素。"
+      },
+      "stats": {
+        "triangles": 16162,
+        "vertices": 8846,
+        "materials": 1,
+        "textures": 1,
+        "joints": 0,
+        "animations": [],
+        "bytes": 416088,
+        "size": [
+          0.22,
+          0.112,
+          0.085
+        ]
+      }
+    },
+    {
+      "id": "google-great-white-shark",
+      "title": {
+        "en": "Great White Shark",
+        "zh-CN": "大白鲨"
+      },
+      "category": "animals",
+      "collection": "Google Scanned Objects",
+      "authors": [
+        "Google Research (© 2020 Google LLC)"
+      ],
+      "licenses": [
+        "CC-BY-4.0"
+      ],
+      "source": "https://app.gazebosim.org/GoogleResearch/fuel/models/Weisshai_Great_White_Shark",
+      "changes": {
+        "en": "Converted from OBJ; textures reduced from 4096 px to at most 512 px.",
+        "zh-CN": "从 OBJ 转换；贴图从 4096 像素缩小到不超过 512 像素。"
+      },
+      "stats": {
+        "triangles": 5912,
+        "vertices": 3348,
+        "materials": 1,
+        "textures": 1,
+        "joints": 0,
+        "animations": [],
+        "bytes": 161776,
+        "size": [
+          0.144,
+          0.075,
+          0.167
+        ]
+      }
+    },
+    {
+      "id": "google-plush-puppy",
+      "title": {
+        "en": "Plush Puppy",
+        "zh-CN": "毛绒小狗"
+      },
+      "category": "toys",
+      "collection": "Google Scanned Objects",
+      "authors": [
+        "Google Research (© 2020 Google LLC)"
+      ],
+      "licenses": [
+        "CC-BY-4.0"
+      ],
+      "source": "https://app.gazebosim.org/GoogleResearch/fuel/models/Dog",
+      "changes": {
+        "en": "Converted from OBJ; simplified from 67,204 to 15,998 triangles; textures reduced from 4096 px to at most 512 px.",
+        "zh-CN": "从 OBJ 转换；三角面从 67,204 简化到 15,998；贴图从 4096 像素缩小到不超过 512 像素。"
+      },
+      "stats": {
+        "triangles": 15998,
+        "vertices": 18777,
+        "materials": 1,
+        "textures": 1,
+        "joints": 0,
+        "animations": [],
+        "bytes": 787724,
+        "size": [
+          0.232,
+          0.199,
+          0.186
+        ]
+      }
+    },
+    {
+      "id": "google-plush-elephant",
+      "title": {
+        "en": "Plush Elephant",
+        "zh-CN": "毛绒大象"
+      },
+      "category": "toys",
+      "collection": "Google Scanned Objects",
+      "authors": [
+        "Google Research (© 2020 Google LLC)"
+      ],
+      "licenses": [
+        "CC-BY-4.0"
+      ],
+      "source": "https://app.gazebosim.org/GoogleResearch/fuel/models/Elephant",
+      "changes": {
+        "en": "Converted from OBJ; simplified from 52,216 to 16,000 triangles; textures reduced from 4096 px to at most 512 px.",
+        "zh-CN": "从 OBJ 转换；三角面从 52,216 简化到 16,000；贴图从 4096 像素缩小到不超过 512 像素。"
+      },
+      "stats": {
+        "triangles": 16000,
+        "vertices": 9754,
+        "materials": 1,
+        "textures": 1,
+        "joints": 0,
+        "animations": [],
+        "bytes": 440076,
+        "size": [
+          0.191,
+          0.271,
+          0.21
+        ]
+      }
+    },
+    {
+      "id": "google-wooden-sheep",
+      "title": {
+        "en": "Wooden Sheep",
+        "zh-CN": "木头小羊"
+      },
+      "category": "toys",
+      "collection": "Google Scanned Objects",
+      "authors": [
+        "Google Research (© 2020 Google LLC)"
+      ],
+      "licenses": [
+        "CC-BY-4.0"
+      ],
+      "source": "https://app.gazebosim.org/GoogleResearch/fuel/models/LACING_SHEEP",
+      "changes": {
+        "en": "Converted from OBJ; textures reduced from 4096 px to at most 512 px.",
+        "zh-CN": "从 OBJ 转换；贴图从 4096 像素缩小到不超过 512 像素。"
+      },
+      "stats": {
+        "triangles": 14590,
+        "vertices": 7942,
+        "materials": 1,
+        "textures": 1,
+        "joints": 0,
+        "animations": [],
+        "bytes": 363668,
+        "size": [
+          0.085,
+          0.089,
+          0.136
+        ]
+      }
+    },
+    {
+      "id": "google-bunny-racer",
+      "title": {
+        "en": "Bunny Racer",
+        "zh-CN": "兔子赛车"
+      },
+      "category": "toys",
+      "collection": "Google Scanned Objects",
+      "authors": [
+        "Google Research (© 2020 Google LLC)"
+      ],
+      "licenses": [
+        "CC-BY-4.0"
+      ],
+      "source": "https://app.gazebosim.org/GoogleResearch/fuel/models/BUNNY_RACER",
+      "changes": {
+        "en": "Converted from OBJ; textures reduced from 4096 px to at most 512 px.",
+        "zh-CN": "从 OBJ 转换；贴图从 4096 像素缩小到不超过 512 像素。"
+      },
+      "stats": {
+        "triangles": 12146,
+        "vertices": 6795,
+        "materials": 1,
+        "textures": 1,
+        "joints": 0,
+        "animations": [],
+        "bytes": 321188,
+        "size": [
+          0.092,
+          0.112,
+          0.088
+        ]
+      }
+    },
+    {
+      "id": "polyhaven-rubber-duck-toy",
+      "title": {
+        "en": "Rubber Duck",
+        "zh-CN": "橡皮鸭"
+      },
+      "category": "toys",
+      "collection": "Poly Haven",
+      "authors": [
+        "Plat251"
+      ],
+      "licenses": [
+        "CC0-1.0"
+      ],
+      "source": "https://polyhaven.com/a/rubber_duck_toy",
+      "changes": {
+        "en": "Packed into one GLB; textures reduced from 1024 px to at most 512 px.",
+        "zh-CN": "打包为单个 GLB；贴图从 1024 像素缩小到不超过 512 像素。"
+      },
+      "stats": {
+        "triangles": 4288,
+        "vertices": 2489,
+        "materials": 1,
+        "textures": 3,
+        "joints": 0,
+        "animations": [],
+        "bytes": 135968,
+        "size": [
+          0.214,
+          0.286,
+          0.3
+        ]
+      }
+    },
+    {
+      "id": "khronos-toy-car",
+      "title": {
+        "en": "Toy Car",
+        "zh-CN": "玩具车"
+      },
+      "category": "toys",
+      "collection": "Khronos glTF Sample Assets",
+      "authors": [
+        "Guido Odendahl (initial car model, CC0-1.0)",
+        "Eric Chadwick (extensions and scene composition, CC0-1.0)"
+      ],
+      "licenses": [
+        "CC0-1.0"
+      ],
+      "source": "https://github.com/KhronosGroup/glTF-Sample-Assets/tree/e124e8d8d7330a5372bc2b4d00d39a4a9d7997ea/Models/ToyCar",
+      "changes": {
+        "en": "Removed 1 prop; simplified from 91,331 to 15,998 triangles; textures reduced from 1024 px to at most 512 px.",
+        "zh-CN": "移除 1 件道具；三角面从 91,331 简化到 15,998；贴图从 1024 像素缩小到不超过 512 像素。"
+      },
+      "stats": {
+        "triangles": 15998,
+        "vertices": 18290,
+        "materials": 2,
+        "textures": 5,
+        "joints": 0,
+        "animations": [],
+        "bytes": 739056,
+        "size": [
+          0.019,
+          0.012,
+          0.038
+        ]
+      }
+    },
+    {
+      "id": "polyhaven-sofa-02",
+      "title": {
+        "en": "Velvet Sofa",
+        "zh-CN": "丝绒沙发"
+      },
+      "category": "home",
+      "collection": "Poly Haven",
+      "authors": [
+        "Kirill Sannikov"
+      ],
+      "licenses": [
+        "CC0-1.0"
+      ],
+      "source": "https://polyhaven.com/a/sofa_02",
+      "changes": {
+        "en": "Packed into one GLB; textures reduced from 1024 px to at most 512 px.",
+        "zh-CN": "打包为单个 GLB；贴图从 1024 像素缩小到不超过 512 像素。"
+      },
+      "stats": {
+        "triangles": 2728,
+        "vertices": 1828,
+        "materials": 1,
+        "textures": 3,
+        "joints": 0,
+        "animations": [],
+        "bytes": 148032,
+        "size": [
+          1.807,
+          0.709,
+          0.818
+        ]
+      }
+    },
+    {
+      "id": "polyhaven-armchair-01",
+      "title": {
+        "en": "Victorian Armchair",
+        "zh-CN": "维多利亚扶手椅"
+      },
+      "category": "home",
+      "collection": "Poly Haven",
+      "authors": [
+        "Kirill Sannikov"
+      ],
+      "licenses": [
+        "CC0-1.0"
+      ],
+      "source": "https://polyhaven.com/a/ArmChair_01",
+      "changes": {
+        "en": "Packed into one GLB; textures reduced from 1024 px to at most 512 px.",
+        "zh-CN": "打包为单个 GLB；贴图从 1024 像素缩小到不超过 512 像素。"
+      },
+      "stats": {
+        "triangles": 5626,
+        "vertices": 3758,
+        "materials": 1,
+        "textures": 3,
+        "joints": 0,
+        "animations": [],
+        "bytes": 246188,
+        "size": [
+          0.848,
+          1.065,
+          0.766
+        ]
+      }
+    },
+    {
+      "id": "polyhaven-rockingchair-01",
+      "title": {
+        "en": "Rocking Chair",
+        "zh-CN": "摇椅"
+      },
+      "category": "home",
+      "collection": "Poly Haven",
+      "authors": [
+        "Jorge Camacho"
+      ],
+      "licenses": [
+        "CC0-1.0"
+      ],
+      "source": "https://polyhaven.com/a/Rockingchair_01",
+      "changes": {
+        "en": "Packed into one GLB; textures reduced from 1024 px to at most 512 px.",
+        "zh-CN": "打包为单个 GLB；贴图从 1024 像素缩小到不超过 512 像素。"
+      },
+      "stats": {
+        "triangles": 11866,
+        "vertices": 10017,
+        "materials": 1,
+        "textures": 3,
+        "joints": 0,
+        "animations": [],
+        "bytes": 472924,
+        "size": [
+          0.708,
+          0.995,
+          0.833
+        ]
+      }
+    },
+    {
+      "id": "khronos-sheen-chair",
+      "title": {
+        "en": "Sheen Chair",
+        "zh-CN": "绒面椅"
+      },
+      "category": "home",
+      "collection": "Khronos glTF Sample Assets",
+      "authors": [
+        "Eric Chadwick (everything, CC0-1.0)"
+      ],
+      "licenses": [
+        "CC0-1.0"
+      ],
+      "source": "https://github.com/KhronosGroup/glTF-Sample-Assets/tree/e124e8d8d7330a5372bc2b4d00d39a4a9d7997ea/Models/SheenChair",
+      "changes": {
+        "en": "Simplified from 39,936 to 15,996 triangles; textures reduced from 1024 px to at most 512 px.",
+        "zh-CN": "三角面从 39,936 简化到 15,996；贴图从 1024 像素缩小到不超过 512 像素。"
+      },
+      "stats": {
+        "triangles": 15996,
+        "vertices": 9856,
+        "materials": 6,
+        "textures": 7,
+        "joints": 0,
+        "animations": [],
+        "bytes": 664852,
+        "size": [
+          0.827,
+          0.686,
+          0.57
+        ]
+      }
+    },
+    {
+      "id": "polyhaven-potted-plant-04",
+      "title": {
+        "en": "Potted Succulent",
+        "zh-CN": "多肉盆栽"
+      },
+      "category": "home",
+      "collection": "Poly Haven",
+      "authors": [
+        "James Ray Cock"
+      ],
+      "licenses": [
+        "CC0-1.0"
+      ],
+      "source": "https://polyhaven.com/a/potted_plant_04",
+      "changes": {
+        "en": "Packed into one GLB; textures reduced from 1024 px to at most 512 px.",
+        "zh-CN": "打包为单个 GLB；贴图从 1024 像素缩小到不超过 512 像素。"
+      },
+      "stats": {
+        "triangles": 8929,
+        "vertices": 5882,
+        "materials": 1,
+        "textures": 3,
+        "joints": 0,
+        "animations": [],
+        "bytes": 348268,
+        "size": [
+          0.168,
+          0.267,
+          0.185
+        ]
+      }
+    },
+    {
+      "id": "khronos-lantern",
+      "title": {
+        "en": "Street Lantern",
+        "zh-CN": "街灯"
+      },
+      "category": "home",
+      "collection": "Khronos glTF Sample Assets",
+      "authors": [
+        "sbtron (initial version, CC0-1.0)",
+        "Frank Galligan (draco compression, CC0-1.0)"
+      ],
+      "licenses": [
+        "CC0-1.0"
+      ],
+      "source": "https://github.com/KhronosGroup/glTF-Sample-Assets/tree/e124e8d8d7330a5372bc2b4d00d39a4a9d7997ea/Models/Lantern",
+      "changes": {
+        "en": "Textures reduced from 2048 px to at most 512 px.",
+        "zh-CN": "贴图从 2048 像素缩小到不超过 512 像素。"
+      },
+      "stats": {
+        "triangles": 5394,
+        "vertices": 4143,
+        "materials": 1,
+        "textures": 4,
+        "joints": 0,
+        "animations": [],
+        "bytes": 253168,
+        "size": [
+          15.491,
+          25.664,
+          4.631
+        ]
+      }
+    },
+    {
+      "id": "khronos-anisotropy-barn-lamp",
+      "title": {
+        "en": "Barn Lamp",
+        "zh-CN": "谷仓灯"
+      },
+      "category": "home",
+      "collection": "Khronos glTF Sample Assets",
+      "authors": [
+        "Eric Chadwick (everything, CC-BY-4.0)"
+      ],
+      "licenses": [
+        "CC-BY-4.0"
+      ],
+      "source": "https://github.com/KhronosGroup/glTF-Sample-Assets/tree/e124e8d8d7330a5372bc2b4d00d39a4a9d7997ea/Models/AnisotropyBarnLamp",
+      "changes": {
+        "en": "Textures reduced from 2048 px to at most 512 px.",
+        "zh-CN": "贴图从 2048 像素缩小到不超过 512 像素。"
+      },
+      "stats": {
+        "triangles": 10203,
+        "vertices": 7712,
+        "materials": 3,
+        "textures": 4,
+        "joints": 0,
+        "animations": [],
+        "bytes": 370636,
+        "size": [
+          0.191,
+          0.255,
+          0.227
+        ]
+      }
+    },
+    {
+      "id": "polyhaven-tea-set-01",
+      "title": {
+        "en": "Tea Set",
+        "zh-CN": "茶具"
+      },
+      "category": "home",
+      "collection": "Poly Haven",
+      "authors": [
+        "James Ray Cock",
+        "Rico Cilliers",
+        "Jurita Burger"
+      ],
+      "licenses": [
+        "CC0-1.0"
+      ],
+      "source": "https://polyhaven.com/a/tea_set_01",
+      "changes": {
+        "en": "Packed into one GLB; simplified from 40,296 to 16,000 triangles; textures reduced from 1024 px to at most 512 px.",
+        "zh-CN": "打包为单个 GLB；三角面从 40,296 简化到 16,000；贴图从 1024 像素缩小到不超过 512 像素。"
+      },
+      "stats": {
+        "triangles": 16000,
+        "vertices": 9330,
+        "materials": 1,
+        "textures": 3,
+        "joints": 0,
+        "animations": [],
+        "bytes": 455260,
+        "size": [
+          0.918,
+          0.165,
+          0.484
+        ]
+      }
+    },
+    {
+      "id": "polyhaven-vintage-grandfather-clock-01",
+      "title": {
+        "en": "Grandfather Clock",
+        "zh-CN": "落地摆钟"
+      },
+      "category": "home",
+      "collection": "Poly Haven",
+      "authors": [
+        "Yann Kervran",
+        "James Ray Cock"
+      ],
+      "licenses": [
+        "CC0-1.0"
+      ],
+      "source": "https://polyhaven.com/a/vintage_grandfather_clock_01",
+      "changes": {
+        "en": "Packed into one GLB; textures reduced from 1024 px to at most 512 px.",
+        "zh-CN": "打包为单个 GLB；贴图从 1024 像素缩小到不超过 512 像素。"
+      },
+      "stats": {
+        "triangles": 8582,
+        "vertices": 8929,
+        "materials": 2,
+        "textures": 3,
+        "joints": 0,
+        "animations": [],
+        "bytes": 456408,
+        "size": [
+          0.626,
+          2.191,
+          0.427
+        ]
+      }
+    },
+    {
+      "id": "nvidia-lamp-table-bedside",
+      "title": {
+        "en": "Bedside Lamp",
+        "zh-CN": "床头台灯"
+      },
+      "category": "home",
+      "collection": "NVIDIA SimReady",
+      "authors": [
+        "NVIDIA Corporation (model)",
+        "codepawl (glTF conversion, simready-glb)"
+      ],
+      "licenses": [
+        "CC-BY-4.0"
+      ],
+      "source": "https://huggingface.co/datasets/nvidia/simready-assets/tree/99bb6c7c1247ff3a1f63e484996336e9e35b9cf8/lamp_table_bedside_a01",
+      "changes": {
+        "en": "Simplified from 49,166 to 16,332 triangles; textures reduced from 1024 px to at most 512 px.",
+        "zh-CN": "三角面从 49,166 简化到 16,332；贴图从 1024 像素缩小到不超过 512 像素。"
+      },
+      "stats": {
+        "triangles": 16332,
+        "vertices": 8931,
+        "materials": 5,
+        "textures": 9,
+        "joints": 0,
+        "animations": [],
+        "bytes": 561076,
+        "size": [
+          0.198,
+          0.372,
+          0.199
+        ]
+      }
+    },
+    {
+      "id": "nvidia-dishware-mug",
+      "title": {
+        "en": "Enamel Mug",
+        "zh-CN": "搪瓷杯"
+      },
+      "category": "home",
+      "collection": "NVIDIA SimReady",
+      "authors": [
+        "NVIDIA Corporation (model)",
+        "codepawl (glTF conversion, simready-glb)"
+      ],
+      "licenses": [
+        "CC-BY-4.0"
+      ],
+      "source": "https://huggingface.co/datasets/nvidia/simready-assets/tree/99bb6c7c1247ff3a1f63e484996336e9e35b9cf8/dishware_mug_a01",
+      "changes": {
+        "en": "Textures reduced from 1024 px to at most 512 px.",
+        "zh-CN": "贴图从 1024 像素缩小到不超过 512 像素。"
+      },
+      "stats": {
+        "triangles": 11876,
+        "vertices": 6343,
+        "materials": 1,
+        "textures": 3,
+        "joints": 0,
+        "animations": [],
+        "bytes": 292628,
+        "size": [
+          0.114,
+          0.08,
+          0.09
+        ]
+      }
+    },
+    {
+      "id": "polyhaven-camera-01",
+      "title": {
+        "en": "Vintage Camera",
+        "zh-CN": "复古相机"
+      },
+      "category": "gadgets",
+      "collection": "Poly Haven",
+      "authors": [
+        "Rajil Jose Macatangay"
+      ],
+      "licenses": [
+        "CC0-1.0"
+      ],
+      "source": "https://polyhaven.com/a/Camera_01",
+      "changes": {
+        "en": "Packed into one GLB; simplified from 26,987 to 15,995 triangles; textures reduced from 1024 px to at most 512 px.",
+        "zh-CN": "打包为单个 GLB；三角面从 26,987 简化到 15,995；贴图从 1024 像素缩小到不超过 512 像素。"
+      },
+      "stats": {
+        "triangles": 15995,
+        "vertices": 13650,
+        "materials": 4,
+        "textures": 9,
+        "joints": 0,
+        "animations": [],
+        "bytes": 775228,
+        "size": [
+          0.214,
+          0.078,
+          0.263
+        ]
+      }
+    },
+    {
+      "id": "polyhaven-television-01",
+      "title": {
+        "en": "Retro Television",
+        "zh-CN": "复古电视"
+      },
+      "category": "gadgets",
+      "collection": "Poly Haven",
+      "authors": [
+        "Gabriel Radić"
+      ],
+      "licenses": [
+        "CC0-1.0"
+      ],
+      "source": "https://polyhaven.com/a/Television_01",
+      "changes": {
+        "en": "Packed into one GLB; textures reduced from 1024 px to at most 512 px.",
+        "zh-CN": "打包为单个 GLB；贴图从 1024 像素缩小到不超过 512 像素。"
+      },
+      "stats": {
+        "triangles": 1918,
+        "vertices": 1976,
+        "materials": 1,
+        "textures": 3,
+        "joints": 0,
+        "animations": [],
+        "bytes": 180200,
+        "size": [
+          0.6,
+          0.457,
+          0.471
+        ]
+      }
+    },
+    {
+      "id": "khronos-boom-box",
+      "title": {
+        "en": "Boom Box",
+        "zh-CN": "手提音响"
+      },
+      "category": "gadgets",
+      "collection": "Khronos glTF Sample Assets",
+      "authors": [
+        "Microsoft (everything, CC0-1.0)"
+      ],
+      "licenses": [
+        "CC0-1.0"
+      ],
+      "source": "https://github.com/KhronosGroup/glTF-Sample-Assets/tree/e124e8d8d7330a5372bc2b4d00d39a4a9d7997ea/Models/BoomBox",
+      "changes": {
+        "en": "Textures reduced from 2048 px to at most 512 px.",
+        "zh-CN": "贴图从 2048 像素缩小到不超过 512 像素。"
+      },
+      "stats": {
+        "triangles": 6036,
+        "vertices": 3575,
+        "materials": 1,
+        "textures": 4,
+        "joints": 0,
+        "animations": [],
+        "bytes": 190836,
+        "size": [
+          0.02,
+          0.02,
+          0.02
+        ]
+      }
+    },
+    {
+      "id": "polyhaven-cassette-player",
+      "title": {
+        "en": "Cassette Player",
+        "zh-CN": "卡带播放器"
+      },
+      "category": "gadgets",
+      "collection": "Poly Haven",
+      "authors": [
+        "Oday Abuzaeed"
+      ],
+      "licenses": [
+        "CC0-1.0"
+      ],
+      "source": "https://polyhaven.com/a/cassette_player",
+      "changes": {
+        "en": "Packed into one GLB; textures reduced from 1024 px to at most 512 px.",
+        "zh-CN": "打包为单个 GLB；贴图从 1024 像素缩小到不超过 512 像素。"
+      },
+      "stats": {
+        "triangles": 4830,
+        "vertices": 3703,
+        "materials": 3,
+        "textures": 6,
+        "joints": 0,
+        "animations": [],
+        "bytes": 299848,
+        "size": [
+          0.129,
+          0.237,
+          0.049
+        ]
+      }
+    },
+    {
+      "id": "polyhaven-alarm-clock-01",
+      "title": {
+        "en": "Alarm Clock",
+        "zh-CN": "闹钟"
+      },
+      "category": "gadgets",
+      "collection": "Poly Haven",
+      "authors": [
+        "Yann Kervran",
+        "James Ray Cock"
+      ],
+      "licenses": [
+        "CC0-1.0"
+      ],
+      "source": "https://polyhaven.com/a/alarm_clock_01",
+      "changes": {
+        "en": "Packed into one GLB; textures reduced from 1024 px to at most 512 px.",
+        "zh-CN": "打包为单个 GLB；贴图从 1024 像素缩小到不超过 512 像素。"
+      },
+      "stats": {
+        "triangles": 8985,
+        "vertices": 7203,
+        "materials": 2,
+        "textures": 3,
+        "joints": 0,
+        "animations": [],
+        "bytes": 371752,
+        "size": [
+          0.132,
+          0.174,
+          0.067
+        ]
+      }
+    },
+    {
+      "id": "polyhaven-vintage-pocket-watch",
+      "title": {
+        "en": "Pocket Watch",
+        "zh-CN": "怀表"
+      },
+      "category": "gadgets",
+      "collection": "Poly Haven",
+      "authors": [
+        "Tal Swicegood"
+      ],
+      "licenses": [
+        "CC0-1.0"
+      ],
+      "source": "https://polyhaven.com/a/vintage_pocket_watch",
+      "changes": {
+        "en": "Packed into one GLB; textures reduced from 1024 px to at most 512 px.",
+        "zh-CN": "打包为单个 GLB；贴图从 1024 像素缩小到不超过 512 像素。"
+      },
+      "stats": {
+        "triangles": 16098,
+        "vertices": 11376,
+        "materials": 3,
+        "textures": 3,
+        "joints": 0,
+        "animations": [],
+        "bytes": 525196,
+        "size": [
+          0.061,
+          0.08,
+          0.014
+        ]
+      }
+    },
+    {
+      "id": "khronos-flight-helmet",
+      "title": {
+        "en": "Flight Helmet",
+        "zh-CN": "飞行头盔"
+      },
+      "category": "gadgets",
+      "collection": "Khronos glTF Sample Assets",
+      "authors": [
+        "Gary Hsu (conversion from maya, CC0-1.0)"
+      ],
+      "licenses": [
+        "CC0-1.0"
+      ],
+      "source": "https://github.com/KhronosGroup/glTF-Sample-Assets/tree/e124e8d8d7330a5372bc2b4d00d39a4a9d7997ea/Models/FlightHelmet",
+      "changes": {
+        "en": "Packed into one GLB; simplified from 94,722 to 17,481 triangles; textures reduced from 2048 px to at most 512 px.",
+        "zh-CN": "打包为单个 GLB；三角面从 94,722 简化到 17,481；贴图从 2048 像素缩小到不超过 512 像素。"
+      },
+      "stats": {
+        "triangles": 17481,
+        "vertices": 12096,
+        "materials": 6,
+        "textures": 14,
+        "joints": 0,
+        "animations": [],
+        "bytes": 842148,
+        "size": [
+          0.367,
+          0.716,
+          0.372
+        ]
+      }
+    },
+    {
+      "id": "khronos-water-bottle",
+      "title": {
+        "en": "Water Bottle",
+        "zh-CN": "水壶"
+      },
+      "category": "gadgets",
+      "collection": "Khronos glTF Sample Assets",
+      "authors": [
+        "Microsoft (everything, CC0-1.0)"
+      ],
+      "licenses": [
+        "CC0-1.0"
+      ],
+      "source": "https://github.com/KhronosGroup/glTF-Sample-Assets/tree/e124e8d8d7330a5372bc2b4d00d39a4a9d7997ea/Models/WaterBottle",
+      "changes": {
+        "en": "Textures reduced from 2048 px to at most 512 px.",
+        "zh-CN": "贴图从 2048 像素缩小到不超过 512 像素。"
+      },
+      "stats": {
+        "triangles": 4510,
+        "vertices": 2508,
+        "materials": 1,
+        "textures": 4,
+        "joints": 0,
+        "animations": [],
+        "bytes": 134248,
+        "size": [
+          0.109,
+          0.26,
+          0.109
+        ]
+      }
+    },
+    {
+      "id": "nvidia-engine-assembly-v8-engine",
+      "title": {
+        "en": "V8 Engine",
+        "zh-CN": "V8 发动机"
+      },
+      "category": "gadgets",
+      "collection": "NVIDIA SimReady",
+      "authors": [
+        "NVIDIA Corporation (model)",
+        "codepawl (glTF conversion, simready-glb)"
+      ],
+      "licenses": [
+        "CC-BY-4.0"
+      ],
+      "source": "https://huggingface.co/datasets/nvidia/simready-assets/tree/99bb6c7c1247ff3a1f63e484996336e9e35b9cf8/engineAssembly_v8_engine_a01",
+      "changes": {
+        "en": "Simplified from 958,765 to 29,952 triangles; textures reduced from 1024 px to at most 512 px.",
+        "zh-CN": "三角面从 958,765 简化到 29,952；贴图从 1024 像素缩小到不超过 512 像素。"
+      },
+      "stats": {
+        "triangles": 29952,
+        "vertices": 26295,
+        "materials": 20,
+        "textures": 37,
+        "joints": 0,
+        "animations": [],
+        "bytes": 1209020,
+        "size": [
+          0.891,
+          0.79,
+          0.879
+        ]
+      }
+    },
+    {
+      "id": "nvidia-robotic-system-arm",
+      "title": {
+        "en": "Robotic Arm",
+        "zh-CN": "机械臂"
+      },
+      "category": "gadgets",
+      "collection": "NVIDIA SimReady",
+      "authors": [
+        "NVIDIA Corporation (model)",
+        "codepawl (glTF conversion, simready-glb)"
+      ],
+      "licenses": [
+        "CC-BY-4.0"
+      ],
+      "source": "https://huggingface.co/datasets/nvidia/simready-assets/tree/99bb6c7c1247ff3a1f63e484996336e9e35b9cf8/robotic_system_arm_b01",
+      "changes": {
+        "en": "Simplified from 785,902 to 15,987 triangles; textures reduced from 1024 px to at most 512 px.",
+        "zh-CN": "三角面从 785,902 简化到 15,987；贴图从 1024 像素缩小到不超过 512 像素。"
+      },
+      "stats": {
+        "triangles": 15987,
+        "vertices": 16835,
+        "materials": 12,
+        "textures": 26,
+        "joints": 0,
+        "animations": [],
+        "bytes": 753028,
+        "size": [
+          1.285,
+          1.505,
+          0.379
+        ]
+      }
+    },
+    {
+      "id": "nvidia-fire-extinguisher-abc",
+      "title": {
+        "en": "Fire Extinguisher",
+        "zh-CN": "灭火器"
+      },
+      "category": "gadgets",
+      "collection": "NVIDIA SimReady",
+      "authors": [
+        "NVIDIA Corporation (model)",
+        "codepawl (glTF conversion, simready-glb)"
+      ],
+      "licenses": [
+        "CC-BY-4.0"
+      ],
+      "source": "https://huggingface.co/datasets/nvidia/simready-assets/tree/99bb6c7c1247ff3a1f63e484996336e9e35b9cf8/fireExtinguisher_abc_a03",
+      "changes": {
+        "en": "Simplified from 109,112 to 16,014 triangles; textures reduced from 1024 px to at most 512 px.",
+        "zh-CN": "三角面从 109,112 简化到 16,014；贴图从 1024 像素缩小到不超过 512 像素。"
+      },
+      "stats": {
+        "triangles": 16014,
+        "vertices": 10870,
+        "materials": 3,
+        "textures": 5,
+        "joints": 0,
+        "animations": [],
+        "bytes": 716176,
+        "size": [
+          0.144,
+          0.545,
+          0.192
+        ]
+      }
+    },
+    {
+      "id": "nvidia-power-tool-drill",
+      "title": {
+        "en": "Cordless Drill",
+        "zh-CN": "电钻"
+      },
+      "category": "gadgets",
+      "collection": "NVIDIA SimReady",
+      "authors": [
+        "NVIDIA Corporation (model)",
+        "codepawl (glTF conversion, simready-glb)"
+      ],
+      "licenses": [
+        "CC-BY-4.0"
+      ],
+      "source": "https://huggingface.co/datasets/nvidia/simready-assets/tree/99bb6c7c1247ff3a1f63e484996336e9e35b9cf8/powerTool_drill_b01",
+      "changes": {
+        "en": "Simplified from 153,377 to 15,999 triangles; textures reduced from 1024 px to at most 512 px.",
+        "zh-CN": "三角面从 153,377 简化到 15,999；贴图从 1024 像素缩小到不超过 512 像素。"
+      },
+      "stats": {
+        "triangles": 15999,
+        "vertices": 13305,
+        "materials": 1,
+        "textures": 3,
+        "joints": 0,
+        "animations": [],
+        "bytes": 818880,
+        "size": [
+          0.216,
+          0.244,
+          0.089
+        ]
+      }
+    },
+    {
+      "id": "nvidia-ppe-helmet-hard-hat",
+      "title": {
+        "en": "Hard Hat",
+        "zh-CN": "安全帽"
+      },
+      "category": "gadgets",
+      "collection": "NVIDIA SimReady",
+      "authors": [
+        "NVIDIA Corporation (model)",
+        "codepawl (glTF conversion, simready-glb)"
+      ],
+      "licenses": [
+        "CC-BY-4.0"
+      ],
+      "source": "https://huggingface.co/datasets/nvidia/simready-assets/tree/99bb6c7c1247ff3a1f63e484996336e9e35b9cf8/ppe_helmet_hardHat_a01",
+      "changes": {
+        "en": "Simplified from 107,260 to 15,995 triangles; textures reduced from 1024 px to at most 512 px.",
+        "zh-CN": "三角面从 107,260 简化到 15,995；贴图从 1024 像素缩小到不超过 512 像素。"
+      },
+      "stats": {
+        "triangles": 15995,
+        "vertices": 10567,
+        "materials": 4,
+        "textures": 8,
+        "joints": 0,
+        "animations": [],
+        "bytes": 499768,
+        "size": [
+          0.29,
+          0.173,
+          0.208
+        ]
+      }
+    },
+    {
+      "id": "nvidia-equipment-bench-vise",
+      "title": {
+        "en": "Bench Vise",
+        "zh-CN": "台虎钳"
+      },
+      "category": "gadgets",
+      "collection": "NVIDIA SimReady",
+      "authors": [
+        "NVIDIA Corporation (model)",
+        "codepawl (glTF conversion, simready-glb)"
+      ],
+      "licenses": [
+        "CC-BY-4.0"
+      ],
+      "source": "https://huggingface.co/datasets/nvidia/simready-assets/tree/99bb6c7c1247ff3a1f63e484996336e9e35b9cf8/equipment_bench_vise_a01",
+      "changes": {
+        "en": "Simplified from 106,162 to 16,000 triangles; textures reduced from 1024 px to at most 512 px.",
+        "zh-CN": "三角面从 106,162 简化到 16,000；贴图从 1024 像素缩小到不超过 512 像素。"
+      },
+      "stats": {
+        "triangles": 16000,
+        "vertices": 10738,
+        "materials": 1,
+        "textures": 3,
+        "joints": 0,
+        "animations": [],
+        "bytes": 540444,
+        "size": [
+          0.324,
+          0.18,
+          0.233
+        ]
+      }
+    },
+    {
+      "id": "khronos-avocado",
+      "title": {
+        "en": "Avocado",
+        "zh-CN": "牛油果"
+      },
+      "category": "food",
+      "collection": "Khronos glTF Sample Assets",
+      "authors": [
+        "Microsoft (everything, CC0-1.0)"
+      ],
+      "licenses": [
+        "CC0-1.0"
+      ],
+      "source": "https://github.com/KhronosGroup/glTF-Sample-Assets/tree/e124e8d8d7330a5372bc2b4d00d39a4a9d7997ea/Models/Avocado",
+      "changes": {
+        "en": "Textures reduced from 2048 px to at most 512 px.",
+        "zh-CN": "贴图从 2048 像素缩小到不超过 512 像素。"
+      },
+      "stats": {
+        "triangles": 682,
+        "vertices": 406,
+        "materials": 1,
+        "textures": 3,
+        "joints": 0,
+        "animations": [],
+        "bytes": 51788,
+        "size": [
+          0.043,
+          0.063,
+          0.028
+        ]
+      }
+    },
+    {
+      "id": "khronos-mandarin-orange",
+      "title": {
+        "en": "Mandarin Orange",
+        "zh-CN": "橘子"
+      },
+      "category": "food",
+      "collection": "Khronos glTF Sample Assets",
+      "authors": [
+        "zamdreamer (initial creation, CC-BY-4.0)",
+        "Eric Chadwick (gltf pbr material, CC-BY-4.0)"
+      ],
+      "licenses": [
+        "CC-BY-4.0"
+      ],
+      "source": "https://github.com/KhronosGroup/glTF-Sample-Assets/tree/e124e8d8d7330a5372bc2b4d00d39a4a9d7997ea/Models/MandarinOrange",
+      "changes": {
+        "en": "Packed into one GLB; simplified from 40,836 to 16,000 triangles; textures reduced from 2048 px to at most 512 px.",
+        "zh-CN": "打包为单个 GLB；三角面从 40,836 简化到 16,000；贴图从 2048 像素缩小到不超过 512 像素。"
+      },
+      "stats": {
+        "triangles": 16000,
+        "vertices": 11094,
+        "materials": 1,
+        "textures": 4,
+        "joints": 0,
+        "animations": [],
+        "bytes": 560504,
+        "size": [
+          0.016,
+          0.017,
+          0.012
+        ]
+      }
+    },
+    {
+      "id": "polyhaven-food-apple-01",
+      "title": {
+        "en": "Apple",
+        "zh-CN": "苹果"
+      },
+      "category": "food",
+      "collection": "Poly Haven",
+      "authors": [
+        "Oliver Harries"
+      ],
+      "licenses": [
+        "CC0-1.0"
+      ],
+      "source": "https://polyhaven.com/a/food_apple_01",
+      "changes": {
+        "en": "Packed into one GLB; textures reduced from 1024 px to at most 512 px.",
+        "zh-CN": "打包为单个 GLB；贴图从 1024 像素缩小到不超过 512 像素。"
+      },
+      "stats": {
+        "triangles": 7012,
+        "vertices": 4019,
+        "materials": 1,
+        "textures": 3,
+        "joints": 0,
+        "animations": [],
+        "bytes": 236668,
+        "size": [
+          0.098,
+          0.085,
+          0.096
+        ]
+      }
+    },
+    {
+      "id": "polyhaven-croissant",
+      "title": {
+        "en": "Croissant",
+        "zh-CN": "可颂"
+      },
+      "category": "food",
+      "collection": "Poly Haven",
+      "authors": [
+        "Greg Zaal",
+        "Dario Barresi"
+      ],
+      "licenses": [
+        "CC0-1.0"
+      ],
+      "source": "https://polyhaven.com/a/croissant",
+      "changes": {
+        "en": "Packed into one GLB; textures reduced from 1024 px to at most 512 px.",
+        "zh-CN": "打包为单个 GLB；贴图从 1024 像素缩小到不超过 512 像素。"
+      },
+      "stats": {
+        "triangles": 1990,
+        "vertices": 1031,
+        "materials": 1,
+        "textures": 3,
+        "joints": 0,
+        "animations": [],
+        "bytes": 145216,
+        "size": [
+          0.2,
+          0.062,
+          0.076
+        ]
+      }
+    },
+    {
+      "id": "polyhaven-lemon",
+      "title": {
+        "en": "Lemon",
+        "zh-CN": "柠檬"
+      },
+      "category": "food",
+      "collection": "Poly Haven",
+      "authors": [
+        "Kuutti Siitonen"
+      ],
+      "licenses": [
+        "CC0-1.0"
+      ],
+      "source": "https://polyhaven.com/a/lemon",
+      "changes": {
+        "en": "Packed into one GLB; textures reduced from 1024 px to at most 512 px.",
+        "zh-CN": "打包为单个 GLB；贴图从 1024 像素缩小到不超过 512 像素。"
+      },
+      "stats": {
+        "triangles": 4012,
+        "vertices": 2231,
+        "materials": 1,
+        "textures": 3,
+        "joints": 0,
+        "animations": [],
+        "bytes": 183584,
+        "size": [
+          0.069,
+          0.095,
+          0.068
+        ]
+      }
+    },
+    {
+      "id": "polyhaven-food-pomegranate-01",
+      "title": {
+        "en": "Pomegranate",
+        "zh-CN": "石榴"
+      },
+      "category": "food",
+      "collection": "Poly Haven",
+      "authors": [
+        "Oliver Harries"
+      ],
+      "licenses": [
+        "CC0-1.0"
+      ],
+      "source": "https://polyhaven.com/a/food_pomegranate_01",
+      "changes": {
+        "en": "Packed into one GLB; textures reduced from 1024 px to at most 512 px.",
+        "zh-CN": "打包为单个 GLB；贴图从 1024 像素缩小到不超过 512 像素。"
+      },
+      "stats": {
+        "triangles": 8142,
+        "vertices": 4593,
+        "materials": 1,
+        "textures": 3,
+        "joints": 0,
+        "animations": [],
+        "bytes": 260244,
+        "size": [
+          0.114,
+          0.115,
+          0.115
+        ]
+      }
+    },
+    {
+      "id": "polyhaven-carrot-cake",
+      "title": {
+        "en": "Carrot Cake",
+        "zh-CN": "胡萝卜蛋糕"
+      },
+      "category": "food",
+      "collection": "Poly Haven",
+      "authors": [
+        "Greg Zaal",
+        "James Ray Cock"
+      ],
+      "licenses": [
+        "CC0-1.0"
+      ],
+      "source": "https://polyhaven.com/a/carrot_cake",
+      "changes": {
+        "en": "Packed into one GLB; textures reduced from 1024 px to at most 512 px.",
+        "zh-CN": "打包为单个 GLB；贴图从 1024 像素缩小到不超过 512 像素。"
+      },
+      "stats": {
+        "triangles": 13790,
+        "vertices": 9211,
+        "materials": 1,
+        "textures": 3,
+        "joints": 0,
+        "animations": [],
+        "bytes": 513016,
+        "size": [
+          0.225,
+          0.098,
+          0.225
+        ]
+      }
+    },
+    {
+      "id": "polyhaven-marble-bust-01",
+      "title": {
+        "en": "Marble Bust",
+        "zh-CN": "大理石胸像"
+      },
+      "category": "art",
+      "collection": "Poly Haven",
+      "authors": [
+        "Rico Cilliers"
+      ],
+      "licenses": [
+        "CC0-1.0"
+      ],
+      "source": "https://polyhaven.com/a/marble_bust_01",
+      "changes": {
+        "en": "Packed into one GLB; textures reduced from 1024 px to at most 512 px.",
+        "zh-CN": "打包为单个 GLB；贴图从 1024 像素缩小到不超过 512 像素。"
+      },
+      "stats": {
+        "triangles": 17456,
+        "vertices": 9746,
+        "materials": 1,
+        "textures": 3,
+        "joints": 0,
+        "animations": [],
+        "bytes": 502492,
+        "size": [
+          0.272,
+          0.515,
+          0.3
+        ]
+      }
+    },
+    {
+      "id": "polyhaven-horse-statue-01",
+      "title": {
+        "en": "Horse Statue",
+        "zh-CN": "骏马雕像"
+      },
+      "category": "art",
+      "collection": "Poly Haven",
+      "authors": [
+        "Rico Cilliers"
+      ],
+      "licenses": [
+        "CC0-1.0"
+      ],
+      "source": "https://polyhaven.com/a/horse_statue_01",
+      "changes": {
+        "en": "Packed into one GLB; simplified from 22,388 to 15,998 triangles; textures reduced from 1024 px to at most 512 px.",
+        "zh-CN": "打包为单个 GLB；三角面从 22,388 简化到 15,998；贴图从 1024 像素缩小到不超过 512 像素。"
+      },
+      "stats": {
+        "triangles": 15998,
+        "vertices": 9223,
+        "materials": 1,
+        "textures": 3,
+        "joints": 0,
+        "animations": [],
+        "bytes": 695456,
+        "size": [
+          0.163,
+          0.22,
+          0.108
+        ]
+      }
+    },
+    {
+      "id": "polyhaven-concrete-cat-statue",
+      "title": {
+        "en": "Cat Statue",
+        "zh-CN": "水泥猫雕像"
+      },
+      "category": "art",
+      "collection": "Poly Haven",
+      "authors": [
+        "Rico Cilliers",
+        "Riley Queen"
+      ],
+      "licenses": [
+        "CC0-1.0"
+      ],
+      "source": "https://polyhaven.com/a/concrete_cat_statue",
+      "changes": {
+        "en": "Packed into one GLB; textures reduced from 1024 px to at most 512 px.",
+        "zh-CN": "打包为单个 GLB；贴图从 1024 像素缩小到不超过 512 像素。"
+      },
+      "stats": {
+        "triangles": 11950,
+        "vertices": 6863,
+        "materials": 1,
+        "textures": 3,
+        "joints": 0,
+        "animations": [],
+        "bytes": 422272,
+        "size": [
+          0.153,
+          0.283,
+          0.25
+        ]
+      }
+    },
+    {
+      "id": "polyhaven-carved-wooden-elephant",
+      "title": {
+        "en": "Carved Elephant",
+        "zh-CN": "木雕大象"
+      },
+      "category": "art",
+      "collection": "Poly Haven",
+      "authors": [
+        "Greg Zaal"
+      ],
+      "licenses": [
+        "CC0-1.0"
+      ],
+      "source": "https://polyhaven.com/a/carved_wooden_elephant",
+      "changes": {
+        "en": "Packed into one GLB; textures reduced from 1024 px to at most 512 px.",
+        "zh-CN": "打包为单个 GLB；贴图从 1024 像素缩小到不超过 512 像素。"
+      },
+      "stats": {
+        "triangles": 2752,
+        "vertices": 1664,
+        "materials": 1,
+        "textures": 3,
+        "joints": 0,
+        "animations": [],
+        "bytes": 146712,
+        "size": [
+          0.109,
+          0.096,
+          0.058
+        ]
+      }
+    },
+    {
+      "id": "polyhaven-antique-ceramic-vase-01",
+      "title": {
+        "en": "Ceramic Vase",
+        "zh-CN": "古董陶瓶"
+      },
+      "category": "art",
+      "collection": "Poly Haven",
+      "authors": [
+        "James Ray Cock"
+      ],
+      "licenses": [
+        "CC0-1.0"
+      ],
+      "source": "https://polyhaven.com/a/antique_ceramic_vase_01",
+      "changes": {
+        "en": "Packed into one GLB; textures reduced from 1024 px to at most 512 px.",
+        "zh-CN": "打包为单个 GLB；贴图从 1024 像素缩小到不超过 512 像素。"
+      },
+      "stats": {
+        "triangles": 9408,
+        "vertices": 5024,
+        "materials": 1,
+        "textures": 3,
+        "joints": 0,
+        "animations": [],
+        "bytes": 285484,
+        "size": [
+          0.255,
+          0.44,
+          0.255
+        ]
+      }
+    },
+    {
+      "id": "polyhaven-garden-gnome",
+      "title": {
+        "en": "Garden Gnome",
+        "zh-CN": "花园地精"
+      },
+      "category": "art",
+      "collection": "Poly Haven",
+      "authors": [
+        "Bhargav Kubal"
+      ],
+      "licenses": [
+        "CC0-1.0"
+      ],
+      "source": "https://polyhaven.com/a/garden_gnome",
+      "changes": {
+        "en": "Packed into one GLB; simplified from 28,858 to 15,999 triangles; textures reduced from 1024 px to at most 512 px.",
+        "zh-CN": "打包为单个 GLB；三角面从 28,858 简化到 15,999；贴图从 1024 像素缩小到不超过 512 像素。"
+      },
+      "stats": {
+        "triangles": 15999,
+        "vertices": 9113,
+        "materials": 1,
+        "textures": 3,
+        "joints": 0,
+        "animations": [],
+        "bytes": 504772,
+        "size": [
+          0.258,
+          0.599,
+          0.21
+        ]
+      }
+    },
+    {
+      "id": "polyhaven-chess-set",
+      "title": {
+        "en": "Chess Set",
+        "zh-CN": "国际象棋"
+      },
+      "category": "art",
+      "collection": "Poly Haven",
+      "authors": [
+        "Riley Queen"
+      ],
+      "licenses": [
+        "CC0-1.0"
+      ],
+      "source": "https://polyhaven.com/a/chess_set",
+      "changes": {
+        "en": "Packed into one GLB; simplified from 76,920 to 15,998 triangles; textures reduced from 1024 px to at most 512 px.",
+        "zh-CN": "打包为单个 GLB；三角面从 76,920 简化到 15,998；贴图从 1024 像素缩小到不超过 512 像素。"
+      },
+      "stats": {
+        "triangles": 15998,
+        "vertices": 13167,
+        "materials": 3,
+        "textures": 9,
+        "joints": 0,
+        "animations": [],
+        "bytes": 769392,
+        "size": [
+          0.553,
+          0.112,
+          0.552
+        ]
+      }
+    },
+    {
+      "id": "polyhaven-treasure-chest",
+      "title": {
+        "en": "Treasure Chest",
+        "zh-CN": "宝箱"
+      },
+      "category": "art",
+      "collection": "Poly Haven",
+      "authors": [
+        "Rico Cilliers"
+      ],
+      "licenses": [
+        "CC0-1.0"
+      ],
+      "source": "https://polyhaven.com/a/treasure_chest",
+      "changes": {
+        "en": "Packed into one GLB; simplified from 103,330 to 15,999 triangles; textures reduced from 1024 px to at most 512 px.",
+        "zh-CN": "打包为单个 GLB；三角面从 103,330 简化到 15,999；贴图从 1024 像素缩小到不超过 512 像素。"
+      },
+      "stats": {
+        "triangles": 15999,
+        "vertices": 14307,
+        "materials": 1,
+        "textures": 3,
+        "joints": 0,
+        "animations": [],
+        "bytes": 675268,
+        "size": [
+          0.959,
+          0.619,
+          0.522
+        ]
+      }
+    },
+    {
+      "id": "polyhaven-ukulele-01",
+      "title": {
+        "en": "Ukulele",
+        "zh-CN": "尤克里里"
+      },
+      "category": "art",
+      "collection": "Poly Haven",
+      "authors": [
+        "Joseph Burgan"
+      ],
+      "licenses": [
+        "CC0-1.0"
+      ],
+      "source": "https://polyhaven.com/a/Ukulele_01",
+      "changes": {
+        "en": "Packed into one GLB; textures reduced from 1024 px to at most 512 px.",
+        "zh-CN": "打包为单个 GLB；贴图从 1024 像素缩小到不超过 512 像素。"
+      },
+      "stats": {
+        "triangles": 8912,
+        "vertices": 8235,
+        "materials": 1,
+        "textures": 3,
+        "joints": 0,
+        "animations": [],
+        "bytes": 412420,
+        "size": [
+          0.178,
+          0.527,
+          0.051
+        ]
+      }
+    },
+    {
+      "id": "khronos-corset",
+      "title": {
+        "en": "Corset",
+        "zh-CN": "紧身胸衣"
+      },
+      "category": "art",
+      "collection": "Khronos glTF Sample Assets",
+      "authors": [
+        "Microsoft (everything, CC0-1.0)"
+      ],
+      "licenses": [
+        "CC0-1.0"
+      ],
+      "source": "https://github.com/KhronosGroup/glTF-Sample-Assets/tree/e124e8d8d7330a5372bc2b4d00d39a4a9d7997ea/Models/Corset",
+      "changes": {
+        "en": "Textures reduced from 2048 px to at most 512 px.",
+        "zh-CN": "贴图从 2048 像素缩小到不超过 512 像素。"
+      },
+      "stats": {
+        "triangles": 18324,
+        "vertices": 11505,
+        "materials": 1,
+        "textures": 3,
+        "joints": 0,
+        "animations": [],
+        "bytes": 564220,
+        "size": [
+          0.039,
+          0.058,
+          0.039
+        ]
+      }
+    }
+  ]
+}

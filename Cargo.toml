@@ -1,0 +1,45 @@
+[package]
+name = "models-viewer"
+description = "Models Viewer · 模型展馆: a 3D gallery of open models for Gizlet OS handhelds, in Rust + raylib."
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+rust-version = "1.88"
+publish = false
+
+[[bin]]
+name = "modelsviewer"
+path = "src/main.rs"
+
+[features]
+# Gizlet OS: link Gizlet runtime 1's libraylib.so.600 (DRM, OpenGL ES 3)
+# instead of letting raylib-sys build a desktop raylib. See build.rs.
+gizlet-os = ["raylib-sys/nobuild"]
+
+[dependencies]
+raylib-sys = "6.0"
+gltf = { version = "1.4", default-features = false, features = [
+    "import",
+    "utils",
+    "names",
+    "KHR_texture_transform",
+    "KHR_materials_emissive_strength",
+    "KHR_materials_transmission",
+    "KHR_materials_unlit",
+] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+
+[target.'cfg(target_os = "linux")'.dependencies]
+libc = "0.2"
+
+[dev-dependencies]
+ttf-parser = "0.25"
+
+[profile.release]
+lto = "thin"
+strip = true
+
+# Decoding textures in debug builds would be slow without optimizing dependencies.
+[profile.dev.package."*"]
+opt-level = 3
