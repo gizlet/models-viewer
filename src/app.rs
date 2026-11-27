@@ -126,7 +126,7 @@ pub struct Shown {
     pub gpu: gpu::Model,
     pub clip: Option<usize>,
     pub appear: f32,
-    shadow_key: Option<(f32, f32, f32)>,
+    shadow_key: Option<(f32, f32, u64)>,
 }
 
 impl Shown {
@@ -145,8 +145,9 @@ impl Shown {
         Shown { index, scene, player, gpu, clip, appear: 0.0, shadow_key: None }
     }
 
+    /// A clip plays, or the last one is still fading out.
     pub fn animated(&self) -> bool {
-        self.clip.is_some()
+        self.clip.is_some() || self.player.fading()
     }
 }
 
@@ -627,10 +628,6 @@ impl App {
             Some(i) => format!("{} · {} / {}", pretty_clip(&sh.scene.animations[i].name), i + 1, n),
             None => s(T::RestPose, lang).to_string(),
         };
-        if next.is_none() {
-            sh.player.advance(&sh.scene, 0.0);
-            sh.gpu.update_pose(&sh.scene, &sh.player);
-        }
         self.say(msg);
     }
 
@@ -656,7 +653,7 @@ impl App {
         }
         let Some(view) = self.view(viewport) else { return };
         let Some(sh) = &mut self.viewer.shown else { return };
-        let key = (view.spin, self.viewer.pitch, sh.player.current.map_or(-1.0, |t| t.time));
+        let key = (view.spin, self.viewer.pitch, sh.player.generation);
         let moved =
             sh.shadow_key.is_none_or(|k| (k.0 - key.0).abs() > 1e-4 || (k.1 - key.1).abs() > 1e-4 || k.2 != key.2);
         if moved {

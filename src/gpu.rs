@@ -247,9 +247,10 @@ void main() {
 const FLOOR_VERTEX: &str = r#"
 attribute vec3 vertexPosition;
 uniform mat4 mvp;
+uniform mat4 matModel;
 varying vec3 vPos;
 void main() {
-    vPos = vertexPosition;
+    vPos = (matModel * vec4(vertexPosition, 1.0)).xyz;
     gl_Position = mvp * vec4(vertexPosition, 1.0);
 }
 "#;
@@ -909,6 +910,7 @@ impl Renderer {
         let scale = (model.radius * 2.2).max(0.9);
         let m = M4::scale(v3(scale / 3.0, 1.0, scale / 3.0));
         self.floor.mat("mvp", &vp.mul(&m));
+        self.floor.mat("matModel", &m);
         self.floor.mat("lightVP", &Self::light_vp(model, view));
         self.floor.vec4("floorColor", stage.floor);
         let strength = if self.style == Style::Normals { 0.0 } else { 0.62 };

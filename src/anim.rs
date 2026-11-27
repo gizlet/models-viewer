@@ -86,6 +86,8 @@ pub struct Player {
     pub world: Vec<M4>,
     pub current: Option<Track>,
     previous: Option<(Track, f32)>,
+    /// Counts poses worked out, so a cached drawing knows when to follow.
+    pub generation: u64,
 }
 
 impl Player {
@@ -99,9 +101,15 @@ impl Player {
             rest,
             current: None,
             previous: None,
+            generation: 0,
         };
         p.update_world(scene);
         p
+    }
+
+    /// A clip is still fading out, toward another clip or the rest pose.
+    pub fn fading(&self) -> bool {
+        self.previous.is_some()
     }
 
     /// Starts a clip, fading from the one playing; `None` returns to rest.
@@ -155,6 +163,7 @@ impl Player {
                 *l = p.mix(l, k);
             }
         }
+        self.generation += 1;
         self.update_world(scene);
     }
 
@@ -255,5 +264,56 @@ mod tests {
         let q = sample(&c, 0.5);
         let angle = 2.0 * q[3].acos();
         assert!((angle - std::f32::consts::FRAC_PI_4).abs() < 1e-4);
+    }
+
+    /// One node whose only clip moves it to x = 1, played and then stopped.
+    fn one_node_scene() -> Scene {
+        use crate::math::QUAT_IDENTITY;
+        use crate::scene::{Animation, Node};
+        let node = Node {
+            parent: None,
+            translation: V3::ZERO,
+            rotation: QUAT_IDENTITY,
+            scale: V3::ONE,
+            mesh: None,
+            skin: None,
+        };
+        let clip = Animation {
+            name: "Slide".into(),
+            channels: vec![channel(
+                Path::Translation,
+                Interp::Step,
+                vec![0.0, 1.0],
+                vec![1.0, 0.0, 0.0, 1.0, 0.0, 0.0],
+            )],
+            duration: 1.0,
+        };
+        Scene {
+            nodes: vec![node],
+            order: vec![0],
+            meshes: Vec::new(),
+            materials: Vec::new(),
+            images: Vec::new(),
+            skins: Vec::new(),
+            animations: vec![clip],
+        }
+    }
+
+    #[test]
+    fn stopping_a_clip_fades_back_to_rest() {
+        let scene = one_node_scene();
+        let mut player = Player::new(&scene);
+        player.play(Some(0));
+        player.advance(&scene, 0.1);
+        assert_eq!(player.local[0].t.x, 1.0);
+        player.play(None);
+        assert!(player.fading());
+        player.advance(&scene, FADE / 2.0);
+        let halfway = player.local[0].t.x;
+        assert!(halfway > 0.0 && halfway < 1.0, "halfway through the fade, got {halfway}");
+        player.advance(&scene, FADE);
+        assert!(!player.fading());
+        assert_eq!(player.local[0].t.x, 0.0);
+        assert_eq!(player.world[0].point(V3::ZERO), V3::ZERO);
     }
 }
