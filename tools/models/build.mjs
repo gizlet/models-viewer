@@ -425,21 +425,30 @@ function assetsMarkdown(entries) {
 await mkdir(OUT, { recursive: true });
 const selected = only.length ? MODELS.filter((model) => only.some((word) => model.id.includes(word))) : MODELS;
 if (new Set(MODELS.map((model) => model.id)).size !== MODELS.length) throw new Error('duplicate model ids');
-const entries = await pool(selected, 4, build);
-if (!only.length) {
+const rebuilt = await pool(selected, 4, build);
+let entries = rebuilt;
+if (only.length) {
+  // A partial build keeps the other models' entries from the last full one.
+  const previous = JSON.parse(await readFile(path.join(OUT, 'catalog.json'), 'utf8').catch(() => 'null'));
+  const byId = new Map((previous?.models ?? []).map((entry) => [entry.id, entry]));
+  for (const entry of rebuilt) byId.set(entry.id, entry);
+  const missing = MODELS.filter((model) => !byId.has(model.id)).map((model) => model.id);
+  if (missing.length) throw new Error(`build every model once before a partial build; missing ${missing.join(', ')}`);
+  entries = MODELS.map((model) => byId.get(model.id));
+} else {
   const kept = new Set(MODELS.map((model) => `${model.id}.glb`));
   for (const file of await readdir(OUT)) {
     if (file.endsWith('.glb') && !kept.has(file)) await unlink(path.join(OUT, file));
   }
-  const catalog = {
-    schema: 1,
-    categories: CATEGORIES.map(({ id, en, zh }) => ({ id, title: { en, 'zh-CN': zh } })),
-    models: entries,
-  };
-  await writeFile(path.join(OUT, 'catalog.json'), `${JSON.stringify(catalog, null, 2)}\n`);
-  await writeFile(path.join(ROOT, 'ASSETS.md'), assetsMarkdown(entries));
-  const total = entries.reduce((sum, entry) => sum + entry.stats.bytes, 0);
-  console.log(`${entries.length} models, ${(total / 1048576).toFixed(1)} MiB`);
 }
+const catalog = {
+  schema: 1,
+  categories: CATEGORIES.map(({ id, en, zh }) => ({ id, title: { en, 'zh-CN': zh } })),
+  models: entries,
+};
+await writeFile(path.join(OUT, 'catalog.json'), `${JSON.stringify(catalog, null, 2)}\n`);
+await writeFile(path.join(ROOT, 'ASSETS.md'), assetsMarkdown(entries));
+const total = entries.reduce((sum, entry) => sum + entry.stats.bytes, 0);
+console.log(`${entries.length} models, ${(total / 1048576).toFixed(1)} MiB`);
 const sorted = Object.fromEntries(Object.entries(lock).sort(([a], [b]) => a.localeCompare(b)));
 await writeFile(LOCK, `${JSON.stringify(sorted, null, 2)}\n`);

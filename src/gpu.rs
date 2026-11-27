@@ -28,6 +28,7 @@ const LOC_NORMAL: u32 = 2;
 const LOC_COLOR: u32 = 3;
 const LOC_JOINTS: u32 = 7;
 const LOC_WEIGHTS: u32 = 8;
+const LOCATIONS: [u32; 6] = [LOC_POSITION, LOC_TEXCOORD, LOC_NORMAL, LOC_COLOR, LOC_JOINTS, LOC_WEIGHTS];
 
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Style {
@@ -484,8 +485,13 @@ impl Geometry {
                     4,
                 );
             }
-            if !ffi::rlEnableVertexArray(self.vao) {
-                // Without vertex array objects, point the attributes every draw.
+            let vao = ffi::rlEnableVertexArray(self.vao);
+            if !vao {
+                // Without vertex array objects, attribute arrays stay enabled
+                // from earlier draws: switch every one off, then point ours.
+                for loc in LOCATIONS {
+                    ffi::rlDisableVertexAttribute(loc);
+                }
                 for &(vbo, loc, size, kind, normalized) in &self.attribs {
                     ffi::rlEnableVertexBuffer(vbo);
                     ffi::rlSetVertexAttribute(loc, size, kind, normalized, 0, 0);
@@ -499,6 +505,11 @@ impl Geometry {
                 ffi::rlDrawVertexArrayElements(0, self.count, std::ptr::null());
             } else {
                 ffi::rlDrawVertexArray(0, self.count);
+            }
+            if !vao {
+                for &(_, loc, ..) in &self.attribs {
+                    ffi::rlDisableVertexAttribute(loc);
+                }
             }
             ffi::rlDisableVertexArray();
             ffi::rlDisableVertexBuffer();

@@ -337,7 +337,15 @@ impl App {
 
     /// Shows the model at `focus` in the current list, loading it in the background.
     pub fn open(&mut self, focus: usize) {
-        let Some(&index) = self.list.get(focus) else { return };
+        if let Some(index) = self.enter_viewer(focus) {
+            self.loader.request(index, self.path(index));
+        }
+    }
+
+    /// Puts the viewer on the model at `focus`; returns its catalog index when
+    /// it still has to be read.
+    fn enter_viewer(&mut self, focus: usize) -> Option<usize> {
+        let &index = self.list.get(focus)?;
         self.focus = focus;
         self.screen = Screen::Viewer;
         let v = &mut self.viewer;
@@ -346,16 +354,13 @@ impl App {
         v.quiet = 0.0;
         v.info_scroll_goal = 0.0;
         v.load_started = self.time;
-        if v.shown.as_ref().is_some_and(|s| s.index == index) {
-            return;
-        }
-        self.loader.request(index, self.path(index));
+        (!v.shown.as_ref().is_some_and(|s| s.index == index)).then_some(index)
     }
 
-    /// Loads the model at `focus` on this thread, for captures.
+    /// Loads the model at `focus` on this thread, for captures, so nothing
+    /// arrives from the worker later to restart the view.
     pub fn open_now(&mut self, focus: usize) {
-        self.open(focus);
-        let index = self.viewer.index;
+        let Some(index) = self.enter_viewer(focus) else { return };
         match loader::load(&self.path(index)) {
             Ok(scene) => self.show(index, scene),
             Err(e) => self.viewer.error = Some(e),
